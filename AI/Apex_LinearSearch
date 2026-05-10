@@ -1,0 +1,35 @@
+public class LinearSearch {
+
+    public static void demo(Integer key) {
+
+        System.debug('Linear Search');
+
+        Integer s = -1;
+
+        List<Integer> numbers = new List<Integer>();
+
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(5);
+        numbers.add(6);
+
+        System.debug('List: ' + numbers);
+
+        for(Integer i = 0; i < numbers.size(); i++) {
+
+            if(key == numbers[i]) {
+
+                s = 1;
+            }
+        }
+
+        if(s == 1) {
+
+            System.debug('Element Found');
+        }
+        else {
+
+            System.debug('Element Not Found');
+        }
+    }
+}
